@@ -1,0 +1,40 @@
+<!--pages/main/main.wxml-->
+<import src="../../lib/components/bottomNav.wxml"/>
+<!-- <template is="nav"/> -->
+<view class="fix-top" >
+  <view class="container">
+    <view class="expand-btn" data-adjust="-1" bindtap="showExpand"><text class="inner-text">+</text></view>
+    <!-- <text class="adjust-info" style="font-size:{{fontSize}}px">字体</text> -->
+    <!-- <button class="font-adjust" data-adjust="1" bindtap="adjustFont">+</button> -->
+    <view class="expand-list" hidden="{{showPan}}">
+      <view class="expand-btn-g" data-adjust="-1" bindtap="adjustFont"><text class="inner-c">字体-</text></view>
+      <view class="expand-btn-g" data-adjust="1" bindtap="adjustFont">字体+</view>
+      <view class="expand-btn-g" bindtap="newTweet">新的</view>
+    </view>
+  </view>
+</view>
+<view class="second-container" bindtap="clickScreen">
+  <view  style="text-align:center">
+    <text wx:if="{{tweets.length==0}}">加载中</text>
+  </view>
+  <view class="posts">
+    <view class="tweet" wx:for="{{tweets}}" wx:key="{{tweet.id}}" wx:for-item="tweet">
+      <image style="width: 40px; height: 40px; background-color: #eeeeee;" src="../../images/icon.jpg"></image>
+
+      <text class="tweet-content" style="font-size:{{fontSize}}px">{{tweet.content}}</text>
+      <view class="btm-info">
+        <view class="group inline">
+          <view class="icon fa-twitter-square inline adjust-info"></view>
+          <text class="sub-further adjust-info">{{tweet.category}}</text>
+        </view>
+        <view class="group inline">
+          <view class="icon fa-star inline adjust-info"></view>
+          <text class="sub-further adjust-info">{{tweet.created}}</text>
+        </view>
+        <view class="group right">
+          <button class="sub-further del" data-id="{{tweet.id}}" bindtap="delTweet">删除这条</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

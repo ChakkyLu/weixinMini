@@ -1,0 +1,25 @@
+ <template name="nav">
+  <view class="bottom-nav">
+    <navigator class="unit-nav" key="main"  url="/pages/main/main">
+        <view style="padding:0 20px 0 20px;">
+          <view class="a icon icon-home center">
+            </view>
+          <view class="center nav-title">主 页</view>
+          </view>
+          </navigator>
+          <navigator class="unit-nav" key="function"  url="/pages/function/function">
+        <view style="padding:0 20px 0 20px;">
+          <view class="a icon icon-cog center">
+            </view>
+          <view class="center nav-title">功 能</view>
+          </view>
+          </navigator>
+          <navigator class="unit-nav" key="mine"  url="/pages/mine/mine">
+        <view style="padding:0 20px 0 20px;">
+          <view class="a icon icon-sitemap center">
+            </view>
+          <view class="center nav-title">我 的</view>
+          </view>
+          </navigator>
+  </view>
+  </template>

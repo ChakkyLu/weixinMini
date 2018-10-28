@@ -1,0 +1,13 @@
+<view>
+  <form bindsubmit="bindFormSubmit">
+    <input class="new-input center" placeholder="字数控制在140字以内" type="text" bindinput="bindKeyInput" maxlength="140"/>
+      <text>选择分类</text>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="picker-border" range-key="text">
+    <view class="picker">
+      {{array[index].text}}
+    </view>
+  </picker>
+    <text >当前字数：{{newContent.length}} / 140</text>
+    <button form-type="submit" bindtap="submit"> 发表 </button>
+  </form>
+</view>

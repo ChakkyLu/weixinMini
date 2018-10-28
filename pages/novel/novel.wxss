@@ -1,0 +1,160 @@
+.gen-part {
+  display: block;
+  text-align: center;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-center {
+  text-align: center;
+}
+.gen-btn {
+  display: inline;
+  background-color: lightsalmon;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 10px;
+  border-radius: 50%;
+}
+.btn-group {
+  padding: 20px;
+}
+.word-space {
+  padding: 10px;
+  margin-top: 20px;
+  display: block;
+}
+.single-word {
+  margin: 0;
+  width: 30%;
+  font-size: 20px;
+  color: brown;
+  padding:5px 10px;
+  border-bottom: 0.4px groove rebeccapurple;
+  display: inline-block;
+
+}
+.single-mean {
+  font-size: 14px;
+  padding:10px;
+  width: 100%;
+  border-bottom: 0.4px groove rgba(250,250,250,.7);
+  display: inline-block;
+}
+.column {
+  margin: 0;
+  text-align: left;
+  display: block;
+}
+.check-area {
+  margin:10px 0;
+  float: right;
+}
+.check-btn {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  background-color:cornflowerblue;
+  color: white;
+  padding: 5px 0;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+
+
+.show-btn {
+  margin-top: 100rpx;
+  color: #22cc22;
+}
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 540rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 1em;
+  left: 3em;
+  z-index: 9999;
+  background: #f9f9f9;
+  border-radius: 36rpx;
+}
+
+.modal-title {
+  padding-top: 50rpx;
+  font-size: 36rpx;
+  color: #ec5300;
+  text-align: center;
+}
+
+.modal-content {
+  padding: 50rpx 0;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.modal-input {
+  display: flex;
+  background: #fff;
+  border: 2rpx solid #ddd;
+  border-radius: 4rpx;
+  font-size: 28rpx;
+}
+
+
+.input {
+  width: 100%;
+  height: 82rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  color: #333;
+}
+
+input-holder {
+  color: #666;
+  font-size: 28rpx;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 86rpx;
+  border-top: 1px solid #dedede;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+
+.btn-cancel {
+  width: 50%;
+  color: #666;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+
+.btn-confirm {
+  width: 50%;
+  color: #ec5300;
+  text-align: center;
+}
+.synomous-show {
+  padding: 5px 0;
+}

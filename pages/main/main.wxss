@@ -1,0 +1,143 @@
+/* pages/main/main.wxss */
+@import '../../lib/components/bottomNav.wxss';
+@import '../../lib/awesome.wxss';
+@import '../../lib/fa.wxss';
+
+
+.logo {
+  font-size:1.4em;
+  letter-spacing: 8px;
+  line-height:1.325em;
+  font-family: 'Arvo';
+  font-weight: 700;
+  color: #ed786a;
+  text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
+}
+.p {
+  text-align: justify;
+  margin-bottom: 2em;
+}
+.sub-logo {
+  margin: 1.25em 0 0 0;
+  letter-spacing: 2rpx;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #888;
+  font-size: 0.85em;
+  text-align: center
+}
+.h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+.second-container {
+  margin: 0 auto;
+}
+.tweet {
+  display: list-item;
+  vertical-align: top;
+  overflow: hidden;
+  word-spacing: normal;
+  letter-spacing: normal;
+  margin-left: 20px;
+  margin-right: 1em;
+  padding-bottom: 20px;
+  border-bottom: 1px dotted #ed786a;
+}
+.posts {
+  margin-top: 2em;
+}
+.tweet-content {
+  font-family: 'GoJuOn';
+  white-space: pre-line;
+  font-size: 12px;
+  line-height: 80%;
+  font-weight: 300;
+}
+.fix-top {
+  position: fixed;
+  top:0;
+  right: 0;
+  z-index: 999;
+}
+.fix-top .container {
+  display: inline;
+}
+.font-adjust {
+  display: inline;
+  font-size:14px;
+}
+.adjust-info {
+  color: coral;
+}
+.btm-info {
+  margin-top: 10px;
+}
+.sub-further {
+  font-size: 12px;
+  display: inline;
+}
+
+.btm-info .group {
+  padding-left: 20px;
+  height: 30px;
+}
+.inline {
+  display: inline;
+}
+.right {
+  float:right;
+  z-index: 1;
+}
+.del {
+  border: none;
+  background-color: white;
+  color: cornflowerblue;
+  padding:10px;
+}
+.cancel {
+  width: 70%;
+  font-size: 14px;
+}
+.fix-new {
+  position: fixed;
+  top:0;
+  left:0;
+}
+.expand-btn {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  color:white;
+  border: 0.7px groove rgba(0, 0, 0, 0.2);
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  float:right;
+}
+.inner-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+.expand-btn-g {
+  font-size: 12px;
+  border-radius: 0!important;
+  padding: 0;
+  padding-top:15px;
+  text-align: center;
+  width: 50px;
+  height: 30px;
+  color:white;
+  border: 0.7px groove rgba(0, 0, 0, 0.2);
+  background-color:  rgb(180,180,180);
+}
+.expand-list {
+  display: block;
+  margin-top: 40px;
+}
+.inner-c {
+  width: 100%;
+  margin-top:50%;
+}

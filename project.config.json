@@ -1,0 +1,19 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.0",
+	"appid": "wx3b3dc4735c900e40",
+	"projectname": "ThreeTrickle",
+	"isGameTourist": false,
+	"condition": {}
+}

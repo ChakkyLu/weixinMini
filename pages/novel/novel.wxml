@@ -1,0 +1,44 @@
+<view class="gen-part">
+  <text>今日任务</text>
+    <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+  <view class="modal-dialog" wx:if="{{showModal}}">
+    <view class="modal-title">{{modal.title}}</view>
+    <scroll-view scroll-y class="modal-content" wx:if="{{modal.status==2}}">
+      <view class="synomous-show" wx:for="{{wordList}}" wx:key="item" wx:for-index="index">
+        <text>{{item}}</text>
+      </view>
+    </scroll-view>
+    <view class="modal-content" wx:if="{{modal.status==1}}">
+    <view>
+      <text>{{modal.notice}}</text>
+    </view>
+    <view class="modal-input">
+      <input placeholder-class="input-holder" type="text" maxlength="20" bindinput="inputChange" class="input" placeholder="请输入单词"></input>
+    </view>
+  </view>
+    <view class="modal-footer">
+      <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+      <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+    </view>
+  </view>
+
+  <view class="btn-group">
+    <button class="gen-btn" data-amount="50" bindtap="genTask">50</button>
+    <button class="gen-btn" data-amount="100" bindtap="genTask">100</button>
+    <button class="gen-btn" data-amount="200" bindtap="genTask">200</button>
+  </view>
+  <text wx:if="{{notice}}">正在加载任务</text>
+  <view class="word-space" wx:if="{{task.length}}">
+    <view wx:for="{{task}}" class="column" wx:key="item" wx:for-index="index">
+      <view class="single-word" data-index="{{index}}" hidden="{{!item.status}}" bindtap="changeWordStatus">
+        <text>{{item.word}}</text>
+      </view>
+      <view class="check-area">
+         <button class="check-btn" data-id="{{index}}" bindtap="testWord">T</button>
+      </view>
+      <view class="single-mean" bindtap="changeWordStatus" data-index="{{index}}">
+        <text>{{item.meaning}}</text>
+      </view>
+    </view>
+  </view>
+</view>

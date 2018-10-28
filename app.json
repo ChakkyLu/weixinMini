@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/main/main",
+    "pages/novel/novel",
+    "pages/main/new"
+  ],
+  "workers": "lib/worker",
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ThreeTrickle",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 10
+  },
+  "tabBar": {
+    "color": "#dfdfdf",
+    "selectedColor": "#333",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "images/icon.jpg",
+      "selectedIconPath": "images/icon.jpg"
+    },
+    {
+      "pagePath": "pages/main/main",
+      "text": "功能",
+      "iconPath": "images/icon.jpg",
+      "selectedIconPath": "images/icon.jpg"
+    },
+    {
+      "pagePath": "pages/novel/novel",
+      "text": "我的",
+      "iconPath": "images/icon.jpg",
+      "selectedIconPath": "images/icon.jpg"
+    }]
+  }
+}

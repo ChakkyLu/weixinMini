@@ -1,0 +1,106 @@
+/**index.wxss**/
+@import '../awesome.wxss';
+@import '../fa.wxss';
+
+view {
+  font-family: 'Arvo';
+}
+.usermotto {
+  margin-top: 200px;
+}
+.bottom-nav {
+  overflow: hidden;
+  background-color: #fff;  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: inline-block;
+}
+.unit-nav {
+  display: inline-block;
+  width: 33.3%;
+  border-top: 1rpx solid #eee;
+  padding-top:6px;
+}
+.a::before {
+  display: inline-block;
+  background: #878787;
+  color: #e4e4e4;
+  width: 1.65em;
+  height: 1.65em;
+  border-radius: 1.65em;
+  line-height: 1.65em;
+  text-align: center;
+  box-shadow: 0.125em 0.175em 0 0 rgba(0,0,0,0.125);
+  margin-right: 0.75em;
+  -moz-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+  -webkit-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+  -ms-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+}
+.icon {
+  width: 35px;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-title {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 2px;
+  letter-spacing: 5px;
+  color: #878787;
+}
+.title-container {
+  padding: 0 20px;
+}
+.main-title {
+  font-family: 'Arvo';
+  font-weight: 400;
+  color: #ed786a;
+  text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
+  font-size:24px;
+  letter-spacing: 10px;
+}
+.sub-title {
+  font-size:13px;
+  color: #888;
+  letter-spacing: 4px;
+  display: block;
+  margin: 1.5em 0 0 0;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  padding: 2em;
+  margin-top: 1em;
+  display:block;
+  margin:auto;
+}
+.tips {
+  padding-top: 0.2em;
+  border-top: solid 1px #e5e5e5;
+  box-shadow: inset 0px -2px 0px 0px #fff, inset 0px -2px 0px 0px #e5e5e5;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.tips .title {
+  color: #928282;
+}
+.tips .container {
+  padding: 1em 2em;
+}
+.tips .content {
+  font-weight: 100;
+  letter-spacing: 1px;
+  display: block;
+  font-size:12px;
+  white-space: pre-line;
+  line-height: 200%;
+}
+.author {
+  margin-bottom: 0!important;
+  padding-top:10px!important;
+}

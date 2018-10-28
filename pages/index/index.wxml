@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title-container">
+    <text style="text-align: center;" class="main-title">三人自有妙计</text>
+    <text style="text-align: center;" class="sub-title">妙人有三，每人有三计</text>
+    <view class="center">
+      <image class="logo" src="../../images/weblogo.png"></image>
+    </view>
+  </view>
+  <view class="tips">
+    <view class="container">
+      <view class="center title"> 使用指南 </view> 
+      <view class="center content">
+        （1）主页包括从推特转移过来的自己发言or关注内容
+        （2）功能包括健康追踪，再要你命三千单词，实时比特币预测价格，一个简单的购物模版
+        （3）我的包括注册账号，修改个人信息
+      </view>
+    </view>
+  </view>
+    <view class="tips function">
+   <view class="container">
+      <view class="center title"> 快速开始 </view> 
+      <view class="center inline">
+        <navigator class="unit-nav" wx:for="{{labs}}" wx:key="{{lab.id}}" wx:for-item="lab" url="/pages/{{lab.id}}/{{lab.id}}">
+          <view style="padding:0 20px 0 20px;">
+            <view class="a icon {{lab.icon}} center">
+              </view>
+            <view class="center nav-title">{{lab.title}}</view>
+            </view>
+            </navigator>
+      </view>
+    </view>
+  </view>
+  <view class="tips author" id="inc">
+    <view class="container">
+      <view class="center title" style="font-size:11px"> 作者：麦伽顿 </view> 
+      <view class="center content" style="font-size:8px;"> 一个学c++却一直在写py和js的人</view>
+    </view>
+  </view>
+
+  <!-- <view class="bottom-nav">
+    <navigator class="unit-nav" wx:for="{{labs}}" wx:key="{{lab.id}}" wx:for-item="lab" url="/pages/{{lab.id}}/{{lab.id}}">
+        <view style="padding:0 20px 0 20px;">
+          <view class="a icon {{lab.icon}} center">
+            </view>
+          <view class="center nav-title">{{lab.title}}</view>
+          </view>
+          </navigator>
+  </view> -->
+</view>
