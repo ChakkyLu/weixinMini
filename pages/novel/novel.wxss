@@ -23,6 +23,21 @@
 .btn-group {
   padding: 20px;
 }
+.task-btn {
+  display: inline;
+  background-color: #ec530062;
+  color: white;  
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 12px;
+  margin:0 0.5em;
+  border: 1px #f9f9f9 dotted;
+  
+}
+.task-area {
+  border-bottom: solid 1px #e5e5e5;
+  box-shadow: inset 0px -2px 0px 0px #fff, inset 0px -2px 0px 0px #e5e5e5;
+}
 .word-space {
   padding: 10px;
   margin-top: 20px;
@@ -87,11 +102,12 @@
 }
 
 .modal-dialog {
-  width: 540rpx;
+  width: 600rpx;
   overflow: hidden;
   position: fixed;
-  top: 1em;
-  left: 3em;
+  top: 3em;
+  left: 50%;
+  margin-left: -300rpx; /* Negative half of width. */
   z-index: 9999;
   background: #f9f9f9;
   border-radius: 36rpx;
@@ -99,14 +115,14 @@
 
 .modal-title {
   padding-top: 50rpx;
-  font-size: 36rpx;
+  font-size: 20px;
   color: #ec5300;
   text-align: center;
 }
 
 .modal-content {
   padding: 50rpx 0;
-  max-height: 300px;
+  max-height: 300rpx;
   overflow: hidden;
 }
 
@@ -116,6 +132,10 @@
   border: 2rpx solid #ddd;
   border-radius: 4rpx;
   font-size: 28rpx;
+}
+
+.item-style {
+  font-size: 20px;
 }
 
 
@@ -139,7 +159,7 @@ input-holder {
   flex-direction: row;
   height: 86rpx;
   border-top: 1px solid #dedede;
-  font-size: 34rpx;
+  font-size: 20px;
   line-height: 86rpx;
 }
 

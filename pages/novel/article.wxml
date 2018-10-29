@@ -1,0 +1,18 @@
+<!--pages/novel/article.wxml-->
+<view class="title">
+  <text>检查小说更新</text>
+</view>
+<view class="picker">
+  <text>追书列表</text>
+  <view class="list">
+    <view class="follow-list" wx:for="{{followList}}" wx:for-item="item"> 
+      <view class="title" data-index="{{index}}" bindtap="changeItemStatus"> {{item.name}} </view>
+      <view class="follow-detail" style="display:{{item.status}}">
+        <view >
+          <text class="inner-intro"> 更新至 </text>
+          <text class="inner-intro"> 上次阅览至 </text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

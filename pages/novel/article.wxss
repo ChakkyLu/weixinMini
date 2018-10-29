@@ -1,0 +1,36 @@
+/* pages/novel/article.wxss */
+.title {
+  padding: 1em;
+  text-align: center;
+}
+.follow-list {
+  width: 100%;
+  padding: 0;
+  text-align: left;
+  background-color: rgba(100, 148, 237, 0.384);
+  border: 0.3px solid white;
+  display: block;
+}
+.follow-list::selection {
+  background-color: rgba(100, 148, 237, 0.9);
+}
+.list {
+  margin: 1em 0;
+  display: block;
+}
+.follow-detail {
+  min-height: 100px;
+  width: 100%;
+  background-color: white;
+  /* transition: opacity 1s ease-out;
+  opacity: 0; */
+}
+.follow-list .title {
+  padding: 5px 0;
+  text-align: left;
+}
+.inner-intro {
+  display: block;
+  padding: 5px 0;
+  font-size: 14px;
+}

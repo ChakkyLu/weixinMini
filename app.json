@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/main/main",
     "pages/novel/novel",
-    "pages/main/new"
+    "pages/main/new",
+    "pages/novel/article"
   ],
   "workers": "lib/worker",
   "window":{

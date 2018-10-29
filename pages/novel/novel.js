@@ -18,7 +18,8 @@ Page({
       status: 1,
       notice: ""
     },
-    inputWord: ""
+    inputWord: "",
+    directions: []
   },
   curWord: "",
   genTask: function(e) {
@@ -43,6 +44,12 @@ Page({
 
       }
     });
+  },
+  goTask: function(e) {
+    let direction = e.currentTarget.dataset.direct;
+    if ( direction == 1) {
+      wx.navigateTo({ url: "article" });
+    }
   },
   changeWordStatus: function(e) {
     let tasks = this.data.task;

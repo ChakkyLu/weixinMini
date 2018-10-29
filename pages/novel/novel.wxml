@@ -5,7 +5,7 @@
     <view class="modal-title">{{modal.title}}</view>
     <scroll-view scroll-y class="modal-content" wx:if="{{modal.status==2}}">
       <view class="synomous-show" wx:for="{{wordList}}" wx:key="item" wx:for-index="index">
-        <text>{{item}}</text>
+        <text class="item-style">{{item}}</text>
       </view>
     </scroll-view>
     <view class="modal-content" wx:if="{{modal.status==1}}">
@@ -20,6 +20,12 @@
       <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
       <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
     </view>
+  </view>
+
+  <view class="btn-group task-area">
+    <view class="task-btn" data-direct="1" bindtap="goTask">检查小说</view>
+    <view class="task-btn" data-direct="2" bindtap="goTask">检查单词</view>
+    <view class="task-btn" data-direct="3" bindtap="goTask">检查日程</view>
   </view>
 
   <view class="btn-group">
