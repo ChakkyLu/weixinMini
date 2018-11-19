@@ -4,15 +4,66 @@
 </view>
 <view class="picker">
   <text>追书列表</text>
+  <view  style="text-align:center">
+    <text wx:if="{{followList.length==0}}">加载中</text>
+  </view>
   <view class="list">
-    <view class="follow-list" wx:for="{{followList}}" wx:for-item="item"> 
+    <view class="follow-list" wx:for="{{followList}}" wx:for-item="item" >
       <view class="title" data-index="{{index}}" bindtap="changeItemStatus"> {{item.name}} </view>
-      <view class="follow-detail" style="display:{{item.status}}">
-        <view >
-          <text class="inner-intro"> 更新至 </text>
-          <text class="inner-intro"> 上次阅览至 </text>
+        <view style='display:{{item.status[0]}}'>
+          <view style='display:{{item.status[1]}}'>
+            <view class="follow-detail">
+              <view class="text-area">
+                <text class="inner-intro"> 更新至 
+                  <text class="inner-notice"> {{item.latest}}</text>
+                </text>
+                <text class="inner-intro"> 上次阅览至 
+                  <text class="inner-notice"> {{item.last}}</text>
+                </text>
+                <text class="inner-intro"> 更新内容 
+                  <text class="inner-notice"> {{item.new}}</text>
+                </text>
+              </view>
+              <view class="btn-area">
+                <button class="detail-btn" data-index="{{index}}" bindtap="bookDetail">详情</button>
+              </view>
+          </view>
         </view>
-      </view>
+
+        <view style='display:{{item.status[2]}}'>
+          <view class="follow-detail" >
+            <view class="chapter-list">
+              <text  wx:for="{{item.chapters}}" wx:for-item="chapter" wx:for-index="innerIndex"
+              class="chapter-name" bindtap="getContent" data-index="{{index}}" data-cid="{{chapter.id}}" data-url="{{chapter.url}}" data-title="{{chapter.name}}">  
+              {{chapter.name}}
+              </text>
+            </view>
+
+            <text>选择页数</text>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{item.array}}" class="picker-border" range-key="text" data-index="{{index}}">
+              <view class="picker">
+                {{item.array[pageSelect].text}}
+              </view>
+            </picker>
+
+            <button class="back-btn" bindtap='backStatus' data-status="booklist" data-index="{{index}}"> 返回</button>
+          </view>
+        </view>
+
+        <view style='display:{{item.status[3]}}'>
+            <view class="follow-detail" >
+              <text> {{item.selectTitle}} </text>
+              <text class="c-content">{{item.content}}</text>
+
+              <button class="back-btn" bindtap='backStatus' data-status="content" data-index="{{index}}"> 返回</button>
+            </view>
+          </view>
+
+
+
+
+
+        </view>
     </view>
   </view>
 </view>

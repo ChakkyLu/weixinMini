@@ -13,11 +13,6 @@ Page({
     ],
   },
   onLoad: function (options) {
-    var worker = wx.createWorker('lib/worker/blog.js');
-    // worker.postMessage({
-    //   msg: 'hello worker'
-    // });
-    // console.log(worker);
   },
   onShow() {
 
