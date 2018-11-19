@@ -32,7 +32,6 @@
   font-size: 12px;
   margin:0 0.5em;
   border: 1px #f9f9f9 dotted;
-  
 }
 .task-area {
   border-bottom: solid 1px #e5e5e5;
